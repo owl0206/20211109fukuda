@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>株式会社TECH</title>
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-display">
+      <div class="header-ttl"><a href="index.html">TECH</a></div>
+      <nav class="header-nav">
+        <ul class="header-nav-menu">
+          <li class="header-nav-item"><a href="index.html">ホーム</a></li>
+          <li class="header-nav-item"><a href="service.html">事業内容</a></li>
+          <li class="header-nav-item"><a href="news.html">ニュース</a></li>
+          <li class="header-nav-item"><a href="blog.html">社員ブログ</a></li>
+          <li class="header-nav-item"><a href="company.html">会社概要</a></li>
+          <li class="header-nav-item"><a href="recruit.html">採用情報</a></li>
+          <li class="header-nav-item"><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <div class="drawer-menu" id="drawer-menu">
+        <span class="menu-line-top"></span>
+        <span class="menu-line-middle"></span>
+        <span class="menu-line-bottom"></span>
+      </div>
+      <nav class="drawer-menu-nav" id="drawer-menu-nav">
+        <ul class="drawer-menu-nav-list">
+          <li class="drawer-nav-item"><a href="index.html">ホーム</a></li>
+          <li class="drawer-nav-item"><a href="service.html">事業内容</a></li>
+          <li class="drawer-nav-item"><a href="news.html">ニュース</a></li>
+          <li class="drawer-nav-item"><a href="blog.html">社員ブログ</a></li>
+          <li class="drawer-nav-item"><a href="company.html">会社概要</a></li>
+          <li class="drawer-nav-item"><a href="recruit.html">採用情報</a></li>
+          <li class="drawer-nav-item"><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--header-end-->
+  <div class="contact-top">
+    <h2 class="contact-ttl">お問い合わせ</h2>
+  </div>
+  <div class="contact-form-box">
+    <div class="contact-box">
+      <div class="contact-form">
+        <label class="contact-label" for="company">会社名</label>
+        <input type="text" name="company" id="company" class="contact-contents">
+      </div>
+      <div class="contact-form">
+        <label class="contact-label" for="name">お名前</label>
+        <span class="mandatory">*</span>
+        <input type="text" name="name" id="name"  required aria-required="true" class="contact-contents">
+      </div>
+      <div class="contact-form">
+        <label class="contact-label" for="mail">メールアドレス</label><span class="mandatory">*</span>
+        <input type="email" name="mail" id="mail" recuired aria-required="true" class="contact-contents">
+      </div>
+      <div class="contact-form">
+        <label class="contact-label" for="contact-text">お問い合わせ内容</label><span class="mandatory">*</span>
+        <textarea name="contact-text" id="contact-text" cols="98" rows="10" class="contact-text"  required aria-required="true"></textarea>
+      </div>
+      <input type="submit" value="お申し込み" class="contact-btn">
+    </div>
+  </div>  
+  <!--footer-->
+  <footer class="footer">
+    <div class="footer-display">
+      <small class="footer-copyright">&copy; 2020 TECH inc.</small>
+      <nav class="footer-nav">
+        <ul class="footer-nav-menu">
+          <li class="footer-nav-item"><a href="index.html">ホーム</a></li>
+          <li class="footer-nav-item"><a href="service.html">事業内容</a></li>
+          <li class="footer-nav-item"><a href="news.html">ニュース</a></li>
+          <li class="footer-nav-item"><a href="blog.html">社員ブログ</a></li>
+          <li class="footer-nav-item"><a href="company.html">会社概要</a></li>
+          <li class="footer-nav-item"><a href="recruit.html">採用情報</a></li>
+          <li class="footer-nav-item"><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

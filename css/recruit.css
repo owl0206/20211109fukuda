@@ -1,0 +1,282 @@
+body {
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro",
+    "Yu Gothic Medium", "游ゴシック Medium", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.header {
+  height: 70px;
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  position: sticky;
+  top: 0;
+  left: 0;
+  margin: 0px;
+  z-index: 5;
+}
+.header-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.header-ttl {
+  font-size: 24px;
+  width: 70px;
+  font-weight: bold;
+  padding-left: 30px;
+}
+.header-ttl:hover {
+  transition: 0.3s;
+  opacity: 0.5;
+}
+.header-nav-menu {
+  display: flex;
+  font-weight: bold;
+}
+.header-nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+.header-nav-item:hover {
+  transition: 0.3s;
+  opacity: 0.5;
+}
+.drawer-menu {
+  display: none;
+}
+.drawer-menu-nav {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header-nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .drawer-menu-nav {
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    left: -100%;
+    top: 0;
+    background: white;
+    transition: 0.7s;
+  }
+  .drawer-menu-nav-list {
+    padding-top: 80px;
+    text-align: center;
+    font-size: 18px;
+  }
+  .drawer-nav-item {
+    list-style-type: none;
+    margin-top: 50px;
+    color: blue;
+  }
+  .drawer-menu {
+    display: inline-block;
+    width: 36px;
+    height: 32px;
+    cursor: pointer;
+    position: relative;
+    z-index: 99;
+  }
+  .menu-line-top,
+  .menu-line-middle,
+  .menu-line-bottom {
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+    transition: 0.5s;
+  }
+  .menu-line-top {
+    top: 0;
+  }
+  .menu-line-middle {
+    top: 14px;
+  }
+  .menu-line-bottom {
+    bottom: 0;
+  }
+  .drawer-menu.open span:nth-of-type(1) {
+    top: 14px;
+    transform: rotate(45deg);
+  }
+  .drawer-menu.open span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .drawer-menu.open span:nth-of-type(3) {
+    top: 14px;
+    transform: rotate(-45deg);
+  }
+  .in {
+    transform: translateX(100%);
+  }
+}
+/*header-end*/
+.recruit-top{
+  background: url(../img/mv.png) center/cover;
+  width: 100%;
+  height: 250px;
+}
+.recruit-ttl{
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  line-height: 250px;
+}
+.recruit-box{
+  width: 75%;
+  margin: 80px auto;
+}
+.recruit-graduate-ttl{
+  font-size: 26px;
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+  padding-bottom: 10px;
+}
+.recruit-graduate-text{
+  padding: 20px 0;
+}
+.recruit-graduate-table{
+  width: 100%;
+  margin-bottom: 80px;
+}
+.recruit-graduate-table th{
+  border: 1px solid #000;
+  height: 50px;
+  background-color: rgba(236, 235, 235, 0.637);
+}
+.recruit-graduate-table td{
+  border: 1px solid #000;
+  padding-left: 10px;
+}
+.recruit-graduate-table-name{
+  font-weight: bold;
+  line-height: 50px;
+  text-align: center;
+}
+.recruit-career-ttl{
+  font-size: 26px;
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+  padding-bottom: 10px;
+}
+.recruit-career-text{
+  padding: 20px 0;
+}
+.recruit-career-table{
+  width: 100%;
+  margin-bottom: 80px;
+}
+.recruit-career-table th{
+  border: 1px solid #000;
+  height: 50px;
+  background-color: rgba(236, 235, 235, 0.637);
+}
+.recruit-career-table td{
+  border: 1px solid #000;
+  padding-left: 10px;
+}
+.recruit-career-table-name{
+  font-weight: bold;
+  line-height: 50px;
+  text-align: center;
+}
+
+
+/*bottom*/
+.bottom-contact {
+  background-color: ghostwhite;
+  width: 100%;
+  height: 280px;
+  text-align: center;
+}
+.bottom-contact-ttl {
+  padding-top: 80px;
+  padding-bottom: 25px;
+  font-size: 30px;
+}
+.bottom-contact-text {
+  font-size: 14px;
+}
+.bottom-contact-btn {
+  display: block;
+  background-color: #cb0032;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  width: 300px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  margin: 40px auto;
+}
+.bottom-contact-btn:hover {
+  transition: 0.3s;
+  opacity: 0.5;
+}
+
+/*footer*/
+.footer {
+  background-color: #000;
+  color: #fff;
+  height: 80px;
+  width: 100%;
+}
+.footer-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  padding-top: 40px;
+}
+.footer-nav-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-right: 30px;
+}
+.footer-copyright {
+  margin-left: 40px;
+}
+.footer-nav-item {
+  padding: 0 15px;
+  font-size: 11px;
+}
+.footer-nav-item {
+  border-left: 1px solid #fff;
+}
+.footer-nav-item:hover {
+  transition: 0.3s;
+  opacity: 0.7;
+}
+.footer-nav-item:first-child {
+  border: 0;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    height: auto;
+  }
+  .footer-display {
+    width: 100%;
+  }
+  .footer-nav-item {
+    border: 0;
+    width: 50%;
+    line-height: 30px;
+    margin-right: 80px;
+  }
+  .footer-nav {
+    text-align: center;
+    width: 40%;
+    margin-bottom: 20px;
+  }
+}
