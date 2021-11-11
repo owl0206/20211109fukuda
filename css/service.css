@@ -1,6 +1,6 @@
 body {
-font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro",
-"Yu Gothic Medium", "游ゴシック Medium", sans-serif;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro",
+    "Yu Gothic Medium", "游ゴシック Medium", sans-serif;
 }
 a {
   text-decoration: none;
@@ -62,7 +62,7 @@ a {
     position: absolute;
     height: 100vh;
     width: 100vw;
-    left: -100%;
+    left: -110%;
     top: 0;
     background: white;
     transition: 0.7s;
