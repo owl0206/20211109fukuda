@@ -259,4 +259,7 @@ a {
     width: 40%;
     margin-bottom: 20px;
   }
+  .footer-nav-menu{
+    white-space: nowrap;
+  }
 }
